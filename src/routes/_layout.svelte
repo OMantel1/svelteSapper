@@ -1,5 +1,5 @@
 <script>
-
+import Cards from "../components/Cards.svelte";
 </script>
 
 <style>
@@ -8,4 +8,5 @@
 
 
 <main>
+    <Cards />
 </main>
