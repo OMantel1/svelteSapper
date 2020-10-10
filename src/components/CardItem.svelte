@@ -60,13 +60,14 @@
         background-color: rgb(44, 143, 220);
         color: rgb(228, 228, 228);
         font-size: 14px;
-        transform: scale(1);
-        transition: linear 200ms;
+        box-shadow: 0 0 0 black;
+        transition: linear 0.150s;
+
     }
 
     .card__btn:hover {
-        transform: scale(1.02);
         text-decoration: none;
+        box-shadow: 2px 2px 4px grey;
     }
 
     .card__btn::after {
