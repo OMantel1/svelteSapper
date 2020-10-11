@@ -3,6 +3,7 @@
     export let cardDesc;
     export let cardSrc;
     export let cardId;
+    export let cardTypeFinancenemt;
 </script>
 
 <style>
@@ -49,7 +50,7 @@
     .card__desc {
         color: rgb(116, 116, 116);
         text-align: initial;
-        padding-bottom: 12px;
+        margin-bottom: 14px;
     }
 
     .card__btn {
@@ -61,8 +62,7 @@
         color: rgb(228, 228, 228);
         font-size: 14px;
         box-shadow: 0 0 0 black;
-        transition: linear 0.150s;
-
+        transition: linear 0.15s;
     }
 
     .card__btn:hover {
@@ -84,7 +84,7 @@
 
 <div class="card__list">
     <div>
-        <p>Type de financement</p>
+        <p>{cardTypeFinancenemt}</p>
         <div class="card__img-container">
             <img src={cardSrc} alt="" class="card__img" />
         </div>

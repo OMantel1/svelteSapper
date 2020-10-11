@@ -60,13 +60,23 @@
 <div class="card-container">
     {#if aidesListe}
         {#each aidesListe as card, i}
-            <CardItem
-                cardTitle={card.title}
-                cardDesc={card.description}
-                cardSrc={card.picture}
-                cardId={card.id} />
+            {#if card.description.length > 295}
+                <CardItem
+                    cardTypeFinancenemt={card.nature.title}
+                    cardTitle={card.title}
+                    cardDesc={card.description.substring(0, 295) + '...'}
+                    cardSrc={card.picture}
+                    cardId={card.id} />
+            {:else}
+                <CardItem
+                    cardTypeFinancenemt={card.nature.title}
+                    cardTitle={card.title}
+                    cardDesc={card.description}
+                    cardSrc={card.picture}
+                    cardId={card.id} />
+            {/if}
         {/each}
     {:else}
-        <div>No content yet</div>
+        <div>no content</div>
     {/if}
 </div>
