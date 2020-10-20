@@ -86,7 +86,7 @@
     <div>
         <p>{cardTypeFinancenemt}</p>
         <div class="card__img-container">
-            <img src={cardSrc} alt="" class="card__img" />
+            <img src={cardSrc} alt="logo financeur" class="card__img" />
         </div>
     </div>
     <div>
